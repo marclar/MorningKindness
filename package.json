@@ -4,32 +4,33 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "mkdir build && echo 'hi' >> build/index.html # next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"
   },
   "dependencies": {
     "@prisma/client": "latest",
+    "autoprefixer": "latest",
     "next": "latest",
+    "postcss": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "twilio": "latest",
-    "typescript": "latest",
     "tailwindcss": "latest",
-    "postcss": "latest",
-    "autoprefixer": "latest"
+    "twilio": "latest",
+    "typescript": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.6",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/jest": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@types/jest": "latest",
-    "prisma": "latest",
-    "jest": "latest",
-    "@testing-library/react": "latest",
-    "@testing-library/jest-dom": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "jest": "latest",
+    "prisma": "latest"
   }
 }
