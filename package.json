@@ -1,0 +1,35 @@
+{
+  "name": "morning-kindness",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/client": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "twilio": "latest",
+    "typescript": "latest",
+    "tailwindcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/jest": "latest",
+    "prisma": "latest",
+    "jest": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/jest-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}

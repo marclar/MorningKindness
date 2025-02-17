@@ -1,0 +1,146 @@
+# Morning Kindness Project Rules
+
+## Project Patterns
+
+### Code Organization
+1. Next.js pages follow route structure
+2. Components organized by feature/page
+3. Shared components in common directory
+4. API routes mirror frontend routes
+5. Test files adjacent to implementation
+
+### Naming Conventions
+1. React components: PascalCase
+2. Files: kebab-case
+3. Functions: camelCase
+4. Database models: PascalCase
+5. API routes: kebab-case
+
+### Code Style
+1. TypeScript strict mode enabled
+2. Functional components with hooks
+3. Mobile-first CSS approach
+4. Test-driven development
+5. Async/await over promises
+
+### Development Workflow
+1. Feature branches from main
+2. PR required for main merges
+3. Tests must pass before merge
+4. Documentation updates required
+5. Memory bank updates for significant changes
+
+## Project Intelligence
+
+### Critical Paths
+1. Authentication flow must be secure
+2. Wake-up calls must be reliable
+3. Admin access strictly controlled
+4. Database connections optimized
+5. API endpoints properly protected
+
+### User Preferences
+1. Mobile-first development priority
+2. Clear, simple interface design
+3. Immediate feedback on actions
+4. Timezone handling critical
+5. Easy schedule management
+
+### Known Challenges
+1. Twilio API rate limits
+2. Database scaling considerations
+3. Cold start performance
+4. Cross-timezone scheduling
+5. Call reliability tracking
+
+### Implementation Notes
+1. Use Prisma for all database access
+2. JWT for session management
+3. Twilio for all communications
+4. Vercel for deployment
+5. Supabase for database hosting
+
+## Tool Usage Patterns
+
+### Development Tools
+1. VSCode as primary IDE
+2. Next.js development server
+3. Jest for testing
+4. Prisma Studio for database
+5. Postman for API testing
+
+### Deployment Tools
+1. GitHub Actions for CI/CD
+2. Vercel for hosting
+3. Supabase for database
+4. Twilio for communications
+5. Error tracking (TBD)
+
+### Testing Tools
+1. Jest for unit tests
+2. Testing Library for components
+3. Cypress for E2E tests
+4. GitHub Actions for CI
+5. Coverage reporting required
+
+## Project Evolution
+
+### Phase 1: MVP
+1. Basic authentication
+2. Simple scheduling
+3. Wake-up calls
+4. Admin view
+5. Core testing
+
+### Phase 2: Enhancement
+1. Advanced scheduling
+2. Custom greetings
+3. Usage analytics
+4. Performance optimization
+5. Enhanced testing
+
+### Phase 3: Scale
+1. Multiple timezones
+2. Backup calls
+3. Custom messages
+4. Advanced analytics
+5. Performance monitoring
+
+## Documentation Requirements
+
+### Code Documentation
+1. TypeScript types required
+2. Function documentation required
+3. Component prop documentation
+4. API endpoint documentation
+5. Test case documentation
+
+### Memory Bank Updates
+1. Update after major changes
+2. Keep progress.md current
+3. Document technical decisions
+4. Track known issues
+5. Maintain active context
+
+## Security Considerations
+
+### Authentication
+1. JWT token management
+2. Magic link expiration
+3. Phone number verification
+4. Admin access control
+5. Session management
+
+### Data Protection
+1. Environment variable security
+2. Database access control
+3. API route protection
+4. Input validation
+5. Output sanitization
+
+### API Security
+1. Rate limiting
+2. Request validation
+3. Error handling
+4. Authentication checks
+5. Admin route protection

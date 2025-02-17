@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model User {
+  id          String     @id @default(cuid())
+  phoneNumber String     @unique
+  timezone    String
+  schedules   Schedule[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Schedule {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  dayOfWeek  Int      // 0-6 (Sunday-Saturday)
+  wakeUpTime DateTime
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([userId, dayOfWeek])
+}
+
+model Greeting {
+  id          String   @id @default(cuid())
+  phoneNumber String
+  messageUrl  String   // MP3 file URL
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([phoneNumber])
+}
